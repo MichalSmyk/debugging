@@ -13,3 +13,12 @@ def encode(plaintext, key)
     end
     return plaintext_chars.join
   end
+
+
+  # Intended output:
+#
+# > encode("theswiftfoxjumpedoverthelazydog", "secretkey")
+# => "EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL"
+#
+# > decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey")
+# => "theswiftfoxjumpedoverthelazydog"
